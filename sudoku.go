@@ -17,24 +17,24 @@ func main() {
 	solveSudo(su)
 
 	printSudo(su)
-	fmt.Println("energy:",energySudo(su));
+	fmt.Println("energy:", energySudo(su))
 	checkSudo(su)
 }
 
 // Beginn: Die Sudoku-Aufgabe wird hier kodiert.
 // arr ist das 9x9 Sudoku-Zahlenquadrat.
 func beginSudo(arr [][]int) {
-	arr[0] = []int{0, 9, 0, 0, 0, 8, 4, 2, 1}
-	arr[1] = []int{0, 0, 0, 0, 9, 5, 3, 0, 0}
-	arr[2] = []int{3, 0, 1, 0, 4, 0, 9, 0, 7}
+	arr[0] = []int{6, 0, 0, 4, 0, 0, 0, 0, 5}
+	arr[1] = []int{2, 9, 4, 6, 0, 0, 7, 0, 0}
+	arr[2] = []int{0, 0, 0, 0, 0, 0, 4, 6, 1}
 
-	arr[3] = []int{0, 0, 0, 0, 6, 0, 0, 3, 2}
-	arr[4] = []int{2, 0, 6, 0, 0, 4, 0, 7, 0}
-	arr[5] = []int{5, 0, 0, 3, 1, 0, 0, 0, 0}
+	arr[3] = []int{0, 2, 3, 5, 0, 0, 0, 7, 4}
+	arr[4] = []int{0, 0, 0, 0, 9, 0, 0, 0, 0}
+	arr[5] = []int{8, 7, 0, 0, 0, 6, 5, 3, 0}
 
-	arr[6] = []int{9, 0, 4, 6, 0, 0, 0, 0, 0}
-	arr[7] = []int{0, 0, 0, 0, 0, 0, 8, 9, 0}
-	arr[8] = []int{0, 5, 2, 4, 8, 0, 0, 0, 0}
+	arr[6] = []int{7, 6, 9, 0, 0, 0, 0, 0, 0}
+	arr[7] = []int{0, 0, 5, 0, 0, 9, 3, 2, 7}
+	arr[8] = []int{1, 0, 0, 0, 0, 7, 0, 0, 6}
 }
 
 func energySudo(arr [][]int) (energy float64) {
@@ -69,6 +69,17 @@ func printSudo(arr [][]int) {
 // Versuche, das Sudoku-Rätsel zu lösen.
 // Momentan passiert hier noch gar nichts.
 func solveSudo(arr [][]int) {
+	arr[0] = []int{6, 0, 0, 4, 0, 0, 0, 0, 5}
+	arr[1] = []int{2, 9, 4, 6, 0, 0, 7, 0, 0}
+	arr[2] = []int{0, 0, 0, 0, 0, 0, 4, 6, 1}
+
+	arr[3] = []int{0, 2, 3, 5, 0, 0, 0, 7, 4}
+	arr[4] = []int{0, 0, 0, 0, 9, 0, 0, 0, 0}
+	arr[5] = []int{8, 7, 0, 0, 0, 6, 5, 3, 0}
+
+	arr[6] = []int{7, 6, 9, 0, 0, 0, 0, 0, 0}
+	arr[7] = []int{0, 0, 5, 0, 0, 9, 3, 2, 7}
+	arr[8] = []int{1, 0, 0, 0, 0, 7, 0, 0, 6}
 }
 
 //Testet, ob der Sudoku-array OK ist.
